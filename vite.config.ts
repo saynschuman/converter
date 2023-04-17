@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api/v1/": {
-        target: "https://m.saynschuman.pp.ua/",
+        target: "http://localhost:3001/",
         secure: false,
         changeOrigin: true,
       },
