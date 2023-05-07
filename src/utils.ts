@@ -35,7 +35,7 @@ export const convertFile = async (
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = "converted.mp3";
+      link.download = `${file.name}.mp3`;
       link.click();
       URL.revokeObjectURL(url);
     } else {

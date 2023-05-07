@@ -24,7 +24,7 @@ export const Convert = () => {
 
   return (
     <>
-      <input type="file" multiple onChange={onChange} />
+      <input type="file" accept=".ogg" multiple onChange={onChange} />
       {files.map((file) => (
         <div key={file.name}>
           <div>{file.name}</div>
